@@ -3,7 +3,6 @@
 /*Grilla del body*/
 
 
-
 .grilla{
 
     margin: 0px;
@@ -13,6 +12,7 @@
     "header"
     "main"
     "footer"
+
     ;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto ;
@@ -99,9 +99,10 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
     
 }
+
 
 
 .nav_img{
@@ -177,77 +178,6 @@ footer{
         font-size: 20px;
     }
 
-
-@media (min-width: 120px) and (max-width: 500px){
-    .destacados__section__img{
-        padding: 20px;
-        }
-}
-
-
-
-
-
-
-
-@media (min-width: 320px) and (max-width: 375px){
-    .accordion-button {
-        font-size: 15px;
-    }
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 120px) and (max-width: 1023px){
-    .footer__1{
-        display: none !important;
-    }
-}
-
-@media (min-width: 1024px){
-    #accordionFlushExample{
-        display: none;
-    }
-}
-
-
-@media (max-width: 700px){
-    .nav_label{
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav_menu{
-        padding-left: 0;
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background:  #dfd4da;
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center) ;
-        transition: clip-path 1s ease-in-out;
-    }
-
-    .nav__input:checked + .nav_menu{
-        clip-path: circle(100% at center);
-    }
-
-}
-
 .container{
     margin-top: 15px;
 }
@@ -256,8 +186,6 @@ footer{
     margin-top: 20px;
     width: 100%;
 }
-
-
 
 
 
@@ -312,9 +240,6 @@ footer{
 }
 
 /*====INSTITUCIONAL====*/
-
-
-
 
 
 .pricipal__section{
@@ -374,7 +299,6 @@ margin-right: 10px;
 .destacados__h2{
     width: 100%;
     animation-duration: 5s;
-    /*animation-name: texto;*/
     animation-iteration-count: infinite;
     padding: 20px;
     font-size:  20px;
@@ -522,6 +446,17 @@ margin-right: 10px;
     grid-area: "pack12";
 }
 
+#formulario{
+    padding-bottom: 25px;
+    align-items: center;
+    
+    background: linear-gradient(150deg, #eba102, #f10271, #00c298);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease-in-out infinite;
+}
+
+
+
 .formulario__input{
     width: 100%;
 }
@@ -579,14 +514,13 @@ margin-right: 10px;
 }
 
 .footer__imagenes{
-    width: 25px;
+    width: 20px;
 }
 
 
 .footer__imagenes_2{
     width: 32px;
     
-
 }
 
 .footer__Contactanos{
@@ -689,7 +623,33 @@ margin-right: 10px;
     background-color: #000000;
 }
 
+
 /*media queries*/
+
+
+@media (min-width: 120px) and (max-width: 1023px){
+    .footer__1{
+        display: none !important;
+    }
+}
+
+
+@media (min-width: 120px) and (max-width: 500px){
+    .destacados__section__img{
+        padding: 20px;
+        }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 375px){
+    .accordion-button {
+        font-size: 15px;
+    }
+    
+}
+
 
 @media screen and (min-width: 375px) {   
     .logo__h1{ 
@@ -745,6 +705,35 @@ margin-right: 10px;
 
 }
 
+
+
+@media (max-width: 700px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu{
+        padding-left: 0;
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background:  #dfd4da;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center) ;
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav__input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }
+
+}
 
 
 @media screen and (min-width: 768px) {
@@ -825,18 +814,18 @@ margin-right: 10px;
     padding-left: 80px;
     padding-right: 80px;
     
+    }   
 }
 
 
+@media (min-width: 1024px){
+    #accordionFlushExample{
+        display: none;
+    }
 }
-
-
-
 
 
 @media screen and (min-width: 1024px) {
-
-
 
     .logo{
         display: flex ;
@@ -895,7 +884,6 @@ margin-right: 10px;
     }
 
 
-
     .footer__1{ 
         padding-left: 20px;
         flex-direction: row;
@@ -904,7 +892,8 @@ margin-right: 10px;
     }
 
     .footer__imagenes{
-        width: 45px;
+        width: 30px;
+        
     }
     
     
@@ -973,8 +962,7 @@ margin-right: 10px;
     #formulario{
         padding-bottom: 25px;
         align-items: center;
-        
-    
+
     }
 
 
@@ -1020,7 +1008,11 @@ margin-right: 10px;
     }
 }
 
+
+
+
     /*Animacion*/
+
     @keyframes texto {
         0%{
             color: #000000;
@@ -1033,5 +1025,14 @@ margin-right: 10px;
         100%{
             color: rgb(0, 0, 0);
         }
+        
+    }
+
+
+    @keyframes BgGradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+        
         
     }
